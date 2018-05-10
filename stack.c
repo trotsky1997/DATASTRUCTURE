@@ -29,3 +29,4 @@ typedef struct{
     QNode *rear;
 }LiQueue;
 
+void initstack(SqStack *)
