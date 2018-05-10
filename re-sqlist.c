@@ -1,5 +1,10 @@
 #include<stdio.h>
 #define maxSize 100
+
+/*
+zi'fu'hua
+*/
+
 typedef struct
 {
     int data[50];
@@ -13,4 +18,10 @@ typedef stuct LNode
     int LNode *next;
 }LNode;
 
+typedf struct DNode
+{
+    int data;
+    struct DNode *prior;
+    struct DNode *next;
+}DNode;
 
