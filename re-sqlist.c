@@ -107,6 +107,24 @@ int deleteelem(SqList *L,int k,int *e)
     --(L->length);
     return 1;
 }
+
+void createlistR(LNode &L,int a[],int n)
+{
+    LNode *s,*r;
+    int i;
+    L = (LNode *)malloc(sizeof(LNode));
+    L->next=NULL;
+    r =c;
+    for(i=0;i<n;i++)
+    {
+        s=(LNode*)malloc(sizeof(LNode));
+        s->data = a[i];
+        r->next = s;
+        r = r->next;
+    }
+}
+
+
 void main()
 {
     SqList* L=(SqList*)malloc(sizeof(SqList));
